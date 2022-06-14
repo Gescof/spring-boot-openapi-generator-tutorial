@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - export CODEARTIFACT_TOKEN=`aws codeartifact get-authorization-token --domain ${CODEARTIFACT_DOMAIN} --query authorizationToken --output text`
-      - ${env.CODEARTIFACT_AUTH_TOKEN}
+      - $env.CODEARTIFACT_AUTH_TOKEN
       - mvn -s settings.xml clean package deploy
   post_build:
     commands:
