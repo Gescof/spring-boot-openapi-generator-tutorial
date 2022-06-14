@@ -6,11 +6,11 @@
 
     <profiles>
         <profile>
-            <id>codeartifact-pipeline-domain-codeartifact-pipeline-repo</id>
+            <id>petstore-petstore-api-repo</id>
             <repositories>
                 <repository>
-                    <id>codeartifact-pipeline-domain-codeartifact-pipeline-repo</id>
-                    <url>https://codeartifact-pipeline-domain-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/codeartifact-pipeline-repo/</url>
+                    <id>petstore-petstore-api-repo</id>
+                    <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore-api-repo/</url>
                 </repository>
             </repositories>
         </profile>
@@ -19,7 +19,7 @@
 
     <servers>
         <server>
-            <id>codeartifact-pipeline-domain-codeartifact-pipeline-repo</id>
+            <id>petstore-petstore-api-repo</id>
             <username>aws</username>
             <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
         </server>
@@ -27,9 +27,9 @@
 
     <mirrors>
         <mirror>
-            <id>codeartifact-pipeline-domain-codeartifact-pipeline-repo</id>
-            <name>codeartifact-pipeline-domain-codeartifact-pipeline-repo</name>
-            <url>https://codeartifact-pipeline-domain-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/codeartifact-pipeline-repo/</url>
+            <id>petstore-petstore-api-repo</id>
+            <name>petstore-petstore-api-repo</name>
+            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore-api-repo/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>

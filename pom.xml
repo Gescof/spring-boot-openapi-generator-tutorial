@@ -81,9 +81,9 @@
 
     <distributionManagement>
         <repository>
-            <id>codeartifact-pipeline-domain-codeartifact-pipeline-repo</id>
-            <name>codeartifact-pipeline-domain-codeartifact-pipeline-repo</name>
-            <url>https://codeartifact-pipeline-domain-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/codeartifact-pipeline-repo/</url>
+            <id>petstore-petstore-api-repo</id>
+            <name>petstore-petstore-api-repo</name>
+            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore-api-repo/</url>
         </repository>
     </distributionManagement>
 
