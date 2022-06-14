@@ -1,0 +1,38 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>${user.home}/.m2/repository</localRepository>
+    <interactiveMode>true</interactiveMode>
+    <offline>false</offline>
+
+    <profiles>
+        <profile>
+            <id>petstore-petstore</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>petstore-petstore</id>
+                    <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+    <servers>
+        <server>
+            <id>petstore-petstore</id>
+            <username>aws</username>
+            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+        </server>
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>petstore-petstore</id>
+            <name>petstore-petstore</name>
+            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+</settings>

@@ -6,11 +6,11 @@ phases:
       java: corretto11
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - pip3 install awscli --upgrade --user
   build:
     commands:
-      - echo Build started on `date`
-      - mvn install
+      - export CODEARTIFACT_TOKEN=`aws codeartifact get-authorization-token --domain ${CODEARTIFACT_DOMAIN} --query authorizationToken --output text`
+      - mvn -s settings.xml clean package deploy
   post_build:
     commands:
       - echo Build completed on `date`

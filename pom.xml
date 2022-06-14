@@ -112,4 +112,12 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>petstore-petstore</id>
+            <name>petstore-petstore</name>
+            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore/</url>
+        </repository>
+    </distributionManagement>
+
 </project>
