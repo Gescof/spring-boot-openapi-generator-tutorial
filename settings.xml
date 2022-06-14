@@ -6,14 +6,14 @@
 
     <profiles>
         <profile>
-            <id>petstore-petstore</id>
+            <id>petstore-snapshots</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <repositories>
                 <repository>
-                    <id>petstore-petstore</id>
-                    <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore/</url>
+                    <id>petstore-snapshots</id>
+                    <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/snapshots/</url>
                 </repository>
             </repositories>
         </profile>
@@ -21,7 +21,7 @@
 
     <servers>
         <server>
-            <id>petstore-petstore</id>
+            <id>petstore-snapshots</id>
             <username>aws</username>
             <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
         </server>
@@ -29,9 +29,9 @@
 
     <mirrors>
         <mirror>
-            <id>petstore-petstore</id>
-            <name>petstore-petstore</name>
-            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/petstore/</url>
+            <id>petstore-snapshots</id>
+            <name>petstore-snapshots</name>
+            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/snapshots/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
