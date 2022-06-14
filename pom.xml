@@ -80,11 +80,11 @@
     </dependencies>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>petstore-snapshots</id>
-            <name>petstore-snapshots</name>
-            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/snapshots/</url>
-        </snapshotRepository>
+        <repository>
+            <id>codeartifact-pipeline-domain-codeartifact-pipeline-repo</id>
+            <name>codeartifact-pipeline-domain-codeartifact-pipeline-repo</name>
+            <url>https://codeartifact-pipeline-domain-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/codeartifact-pipeline-repo/</url>
+        </repository>
     </distributionManagement>
 
     <build>
