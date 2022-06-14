@@ -79,6 +79,14 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>petstore-snapshots</id>
+            <name>petstore-snapshots</name>
+            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -111,13 +119,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>petstore-snapshots</id>
-            <name>petstore-snapshots</name>
-            <url>https://petstore-766888718577.d.codeartifact.us-east-1.amazonaws.com/maven/snapshots/</url>
-        </repository>
-    </distributionManagement>
 
 </project>
